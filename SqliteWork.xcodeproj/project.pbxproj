@@ -12,6 +12,13 @@
 		19214D9521B6CADB004BA407 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19214D9321B6CADB004BA407 /* Main.storyboard */; };
 		19214D9721B6CADE004BA407 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19214D9621B6CADE004BA407 /* Assets.xcassets */; };
 		19214D9A21B6CADE004BA407 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19214D9821B6CADE004BA407 /* LaunchScreen.storyboard */; };
+		19214DA921B6E240004BA407 /* PlayerSeesionScoreModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19214DA821B6E240004BA407 /* PlayerSeesionScoreModel.swift */; };
+		19214DAB21B6E3CE004BA407 /* PlayerScoreDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19214DAA21B6E3CE004BA407 /* PlayerScoreDAO.swift */; };
+		19214DAD21B6E81D004BA407 /* ConnectionPointers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19214DAC21B6E81D004BA407 /* ConnectionPointers.swift */; };
+		19214DAF21B6E826004BA407 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19214DAE21B6E826004BA407 /* Constant.swift */; };
+		19214DB121B6E82B004BA407 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19214DB021B6E82B004BA407 /* Database.swift */; };
+		19214DB321B6E82E004BA407 /* TableFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19214DB221B6E82E004BA407 /* TableFile.swift */; };
+		19BB62D421B6F9DE000C3723 /* QueryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BB62D321B6F9DE000C3723 /* QueryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +29,13 @@
 		19214D9621B6CADE004BA407 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		19214D9921B6CADE004BA407 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		19214D9B21B6CADE004BA407 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		19214DA821B6E240004BA407 /* PlayerSeesionScoreModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerSeesionScoreModel.swift; sourceTree = "<group>"; };
+		19214DAA21B6E3CE004BA407 /* PlayerScoreDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerScoreDAO.swift; sourceTree = "<group>"; };
+		19214DAC21B6E81D004BA407 /* ConnectionPointers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionPointers.swift; sourceTree = "<group>"; };
+		19214DAE21B6E826004BA407 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		19214DB021B6E82B004BA407 /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
+		19214DB221B6E82E004BA407 /* TableFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableFile.swift; sourceTree = "<group>"; };
+		19BB62D321B6F9DE000C3723 /* QueryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +68,45 @@
 		19214D8E21B6CADB004BA407 /* SqliteWork */ = {
 			isa = PBXGroup;
 			children = (
+				19BB62D521B701D0000C3723 /* DatabaseWork */,
+				19214DA721B6E212004BA407 /* Model */,
+				19214DA321B6CBF3004BA407 /* Dao */,
 				19214D8F21B6CADB004BA407 /* AppDelegate.swift */,
 				19214D9121B6CADB004BA407 /* ViewController.swift */,
 				19214D9321B6CADB004BA407 /* Main.storyboard */,
 				19214D9621B6CADE004BA407 /* Assets.xcassets */,
 				19214D9821B6CADE004BA407 /* LaunchScreen.storyboard */,
 				19214D9B21B6CADE004BA407 /* Info.plist */,
+				19BB62D321B6F9DE000C3723 /* QueryViewController.swift */,
 			);
 			path = SqliteWork;
+			sourceTree = "<group>";
+		};
+		19214DA321B6CBF3004BA407 /* Dao */ = {
+			isa = PBXGroup;
+			children = (
+				19214DAA21B6E3CE004BA407 /* PlayerScoreDAO.swift */,
+			);
+			path = Dao;
+			sourceTree = "<group>";
+		};
+		19214DA721B6E212004BA407 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				19214DA821B6E240004BA407 /* PlayerSeesionScoreModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		19BB62D521B701D0000C3723 /* DatabaseWork */ = {
+			isa = PBXGroup;
+			children = (
+				19214DB221B6E82E004BA407 /* TableFile.swift */,
+				19214DB021B6E82B004BA407 /* Database.swift */,
+				19214DAE21B6E826004BA407 /* Constant.swift */,
+				19214DAC21B6E81D004BA407 /* ConnectionPointers.swift */,
+			);
+			path = DatabaseWork;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +180,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19214DAB21B6E3CE004BA407 /* PlayerScoreDAO.swift in Sources */,
+				19214DA921B6E240004BA407 /* PlayerSeesionScoreModel.swift in Sources */,
+				19BB62D421B6F9DE000C3723 /* QueryViewController.swift in Sources */,
+				19214DB321B6E82E004BA407 /* TableFile.swift in Sources */,
 				19214D9221B6CADB004BA407 /* ViewController.swift in Sources */,
 				19214D9021B6CADB004BA407 /* AppDelegate.swift in Sources */,
+				19214DAD21B6E81D004BA407 /* ConnectionPointers.swift in Sources */,
+				19214DB121B6E82B004BA407 /* Database.swift in Sources */,
+				19214DAF21B6E826004BA407 /* Constant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
