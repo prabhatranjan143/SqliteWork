@@ -15,6 +15,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var commulativeScore: UITextField!
     
     @IBOutlet weak var SeesionBestScore: UITextField!
+    let testVariable = "Hello"
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Add Player Score"
